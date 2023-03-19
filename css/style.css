@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,500&display=swap");
+
+
+body {
+    background: white;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Alegreya Sans', sans-serif ;
+    --ff-secondary: 'Kavoon', cursive ;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;    
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5;
+        --hs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/*General Styles*/
