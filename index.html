@@ -4,16 +4,134 @@
   <title>Portfolio Website-Carson</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@900&display=swap');
+  </style>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+      <a class="navbar-brand" href="#">CARSON SPENCER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupported">
+        <ul class="navbar-nav nav-pills ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="bighero">
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h2 class="hero_title">Hi, it's me Carson</h2>
+          <p class="hero_desc">WELCOME TO MY PORTFOLIO!</p>
+      </div>
+      </div>
+  </div>
+  </section>
+  <!-- portfolio section-->
+  <section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Featured Projects</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="./images/mockup.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Explore Magazine</h4>
+                        <p class="card-text">The brief for this project was to create the cover for a magazine.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Quiz App</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Landing Page</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+</section>
+  <section id="about">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4">
+        <div class="col-lg-4">
+          <img src="./images/Untitled-1.png" class="imageabout" alt="rigby">
+        </div>
+        <div class="col-lg-8">
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <ul>
+                <li>Name: Carson Spencer</li>
+                <li>Age:21</li>
+                <li>Graphic Designer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- footer section-->
+   <footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </div>
+</footer>
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
 </body>
