@@ -1,5 +1,17 @@
-.navbar {
-    background-color: #fff;
+
+.navbar-toggler-icon {
+    color: #000000;
+}
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
 }
 
 .navbar-brand {
@@ -38,7 +50,7 @@
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(64, 64, 64);
@@ -101,5 +113,14 @@ li {
 #footer {
     background-color: #808080;
     text-align: center;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
 }
 
