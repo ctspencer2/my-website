@@ -19,6 +19,7 @@
 }
 
 .bighero {
+    background: url('./images/hero.jpg');
     height: 100vh;
     color: rgb(64, 64, 64);
     position: relative;
