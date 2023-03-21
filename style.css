@@ -1,4 +1,6 @@
-
+.navbar {
+    background-color: #fff;
+}
 
 .navbar-brand {
     font-family: 'Alegreya Sans', sans-serif;
@@ -41,6 +43,10 @@
     color: rgb(64, 64, 64);
 }
 
+#heroimg {
+    top: 50%;
+}
+
 h1 {
     font-family: 'Alegreya Sans', sans-serif;
     color: rgb(64, 64, 64);
@@ -62,6 +68,10 @@ li {
 
 .imageabout {
     width: 100%;
+}
+
+.aboutlist {
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 /* display background color black on navbar scroll */
@@ -91,3 +101,4 @@ li {
     background-color: #808080;
     text-align: center;
 }
+

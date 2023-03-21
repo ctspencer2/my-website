@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
     <div class="container">
@@ -46,6 +45,7 @@
           <p class="hero_desc">WELCOME TO MY PORTFOLIO!</p>
       </div>
       </div>
+      div
   </div>
   </section>
   <!-- portfolio section-->
@@ -60,7 +60,7 @@
                         <h4 class="card-title">Explore Magazine</h4>
                         <p class="card-text">The brief for this project was to create the cover for a magazine.</p>
                         <div class="text-center">
-                            <a href="#" class="btn btn-success">Link</a>
+                            <a href="#" class="btn btn-success">Interested?</a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         <h4 class="card-title">Cereal Box</h4>
                         <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="text-center">
-                            <a href="#" class="btn btn-success">Link</a>
+                            <a href="#" class="btn btn-success">Click Me</a>
                         </div>
                     </div>
                 </div>
@@ -81,12 +81,12 @@
 
             <div class="col-lg-4 mt-4">
                 <div class="card portfolioContent">
-                    <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                    <img class="card-img-top" src="./images/favtype.jpg" alt="Card image" style="width:100%">
                     <div class="card-body">
-                        <h4 class="card-title">Product Landing Page</h4>
+                        <h4 class="card-title">Favorite Type Poster</h4>
                         <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="text-center">
-                            <a href="#" class="btn btn-success">Link</a>
+                            <a href="#" class="btn btn-success">Look Closer</a>
                         </div>
                     </div>
                 </div>
@@ -102,20 +102,51 @@
           <img src="./images/Untitled-1.png" class="imageabout" alt="rigby">
         </div>
         <div class="col-lg-8">
-          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+          <p>I am a graphic design student in my first year at North Idaho College. I am originally from the San Francisco Bay Area and moved to north Idaho about 4 years ago. Even though I miss the city you really cannot beat the fresh air. Plus, the program that I am attending here has made me reach goals that I never though I could have.</p>
           <div class="row mt-3">
             <div class="col-md-6">
               <ul>
-                <li>Name: Carson Spencer</li>
-                <li>Age:21</li>
-                <li>Graphic Designer</li>
+                <li class="aboutlist">Name: Carson Spencer</li>
+                <li class="aboutlist">Age:21</li>
+                <li class="aboutlist">Graphic Designer</li>
               </ul>
             </div>
+            <p>I am really interested in all aspects of design. However, since I was a young lad, I have always been interested in cartoons. I know how it sounds, but my dream would be to have the chance to work on an animated show in the future!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                      <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=north+Idaho+college&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                      </div>
+                      <a class="embed-map-html" href="https://kbj9qpmy.com/hrn" id="grab-map-authorization">InMotion Hosting</a>
+                      <style>#g-mapdisplay img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
+                    </div>
+                  </div>
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>                    
+                </div>
+            </div>
+        </div>
+    </section>
    <!-- footer section-->
    <footer id="footer">
     <div class="container-fluid">
