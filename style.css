@@ -212,12 +212,11 @@ a.button1:hover {
     cursor: pointer;
 }
 
-.fa-facebook:hover,
 .fa-instagram:hover,
 .fa-google:hover,
 .fa-linkedin:hover,
 .fa-github:hover {
-    color: #008000;
+    color: teal;
 }
 
 .fab {
