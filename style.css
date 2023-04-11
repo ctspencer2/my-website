@@ -123,6 +123,10 @@ a.button1:hover {
     background-color: #FFFFFF;
 }
 
+.btn:hover {
+    background-color: teal;
+}
+
 @media all and (max-width: 30em) {
     a.button1 {
         display: block;
