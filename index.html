@@ -147,17 +147,25 @@
               <div class="col-lg-6">
                   <h1 class="center-form-header">Contact Me</h1>
                   <!-- Form Fields -->
-                  <form action="https://formspree.io/f/mjvdpoen" method="POST" enctype="multipart/form-data">
-                    <label>
-                      <span>Your email:</span>
-                      <input type="email" name="email" required>
-                    </label>
-                    <label>
-                      <span>Your file:</span>
-                      <input type="file" name="upload" required>
-                    </label>
-                    <button type="submit">Send</button>
-                  </form>                                               
+                  <form method="post" action="https://formspree.io/f/mjvdpoen" enctype="multipart/form-data" >
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-success mt-3">Send</button>
+                </form>                                   
               </div>
           </div>
       </div>
