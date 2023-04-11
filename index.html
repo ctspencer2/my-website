@@ -144,15 +144,15 @@
               <div class="col-lg-6">
                   <h1 class="center-form-header">Contact Me</h1>
                   <!-- Form Fields -->
-                  <form class="center-form">
-                      <input type="text" class="form-control form-control-lg" placeholder="Name" required>
-                      <input type="email" class="form-control mt-3" placeholder="Email" required>
-                      <input type="text" class="form-control mt-3" placeholder="Subject" required>
-                      <div class="mb-3 mt-3">
-                          <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details" required></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-success mt-3">Contact Me</button>
-                  </form>
+                  <form class="center-form" method="POST" action="/submit-form.php">
+                    <input type="text" name="name" class="form-control form-control-lg" placeholder="Name" required>
+                    <input type="email" name="email" class="form-control mt-3" placeholder="Email" required>
+                    <input type="text" name="subject" class="form-control mt-3" placeholder="Subject" required>
+                    <div class="mb-3 mt-3">
+                      <textarea class="form-control" rows="5" name="message" placeholder="Project Details" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success mt-3">Contact Me</button>
+                  </form>                  
               </div>
           </div>
       </div>
@@ -165,7 +165,7 @@
         <div class="social-icons mt-4">
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/ctspencer2" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://mail.google.com" target="_blank"><i class="fab fa-google"></i></a>
         </div>
     </div>
