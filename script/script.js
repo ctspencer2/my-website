@@ -10,3 +10,7 @@ window.onscroll = function() {
         header.classList.remove('navbarDark');
     }
 }
+
+window.onload = function() {
+    window.scrollTo(0, 0);
+}
