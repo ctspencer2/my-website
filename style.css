@@ -80,8 +80,19 @@ li {
 }
 
 
-.navbar-brand {
+.logo {
     font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo:hover {
+    background-color: white;
+    color: teal;
 }
 
 .nav-link {
