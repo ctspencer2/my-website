@@ -2,6 +2,9 @@
     color: #000000;
 }
 
+a {
+    font-family: 'Alegreya Sans', sans-serif;
+}
 
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
@@ -28,6 +31,32 @@
 .nav-pills .nav-link.active {
     background: rgb(64, 64, 64);
 }
+
+a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:rgba(0,0,0,.55);
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    }
+
+    a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+
+    @media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+    }
 
 .bighero {
     background: url('./images/hero.jpg');
