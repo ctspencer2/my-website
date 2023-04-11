@@ -1,17 +1,22 @@
 const express = require('express');
-const app = express();
-const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const sendEmail = require('./send-email');
 
+const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Endpoint for form submission
 app.post('/submit-form', (req, res) => {
   const { name, email, subject, message } = req.body;
-  sendEmail(name, email, subject, message);
-  res.send('Email sent successfully');
+  sendEmail(name, email, subject, message)
+    .then(() => res.send('Email sent successfully'))
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send('Error sending email');
+    });
 });
 
+// Start server
 app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+  console.log('Server started on port 3000');
 });
