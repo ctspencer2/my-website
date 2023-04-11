@@ -255,7 +255,21 @@ a.button1:hover {
     border-color: #707472;
 }
 
-/* Media queries for responsiveness */
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.5rem rgb(64, 64, 64));
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media queries for screen size 1200px and below */
 @media screen and (max-width: 1200px) {
     .hero_title {
         font-size: 3.5rem;
@@ -263,8 +277,15 @@ a.button1:hover {
     .hero_desc {
         font-size: 1.5rem;
     }
+    .bighero {
+        height: 75vh;
+    }
+    .card-img-top {
+        width: 70%; /* Updated */
+    }
 }
 
+/* Media queries for screen size 992px and below */
 @media screen and (max-width: 992px) {
     .hero_title {
         font-size: 2.5rem;
@@ -272,8 +293,15 @@ a.button1:hover {
     .hero_desc {
         font-size: 1.25rem;
     }
+    .bighero {
+        height: 60vh;
+    }
+    .card-img-top {
+        width: 60%; /* Updated */
+    }
 }
 
+/* Media queries for screen size 768px and below */
 @media screen and (max-width: 768px) {
     .hero_title {
         font-size: 1.75rem;
@@ -284,8 +312,15 @@ a.button1:hover {
     .social-icons {
         font-size: 24px;
     }
+    .bighero {
+        height: 50vh;
+    }
+    .card-img-top {
+        width: 50%; /* Updated */
+    }
 }
 
+/* Media queries for screen size 576px and below */
 @media screen and (max-width: 576px) {
     .hero_title {
         font-size: 1.5rem;
@@ -296,60 +331,10 @@ a.button1:hover {
     .social-icons {
         font-size: 18px;
     }
-}
-
-/* Media queries for card images */
-@media screen and (max-width: 1200px) {
-    .card-img-top {
-        width: 75%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .card-img-top {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card-img-top {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .card-img-top {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Responsive hero image */
-@media screen and (max-width: 1200px) {
-    .bighero {
-        height: 75vh;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .bighero {
-        height: 60vh;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .bighero {
-        height: 50vh;
-    }
-}
-
-@media screen and (max-width: 576px) {
     .bighero {
         height: 40vh;
     }
+    .card-img-top {
+        width: 40%; /* Updated */
+    }
 }
-
-
