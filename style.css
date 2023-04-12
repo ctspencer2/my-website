@@ -3,6 +3,10 @@ body, li {
     font-family: 'Alegreya', serif;
 }
 
+#project-body {
+    background: url('./images/hero.jpg');
+}
+
 h1, h4, .aboutlist, .navbar-brand, .hero_title {
     font-family: 'Alegreya Sans', sans-serif;
     color: rgb(64, 64, 64);
@@ -11,6 +15,7 @@ h1, h4, .aboutlist, .navbar-brand, .hero_title {
 li {
     text-decoration: none;
 }
+
 
 .teall {
     color: teal !important;
