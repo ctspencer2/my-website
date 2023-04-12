@@ -13,7 +13,7 @@ li {
 }
 
 .teall {
-    color: teal;
+    color: teal !important;
 }
 
 /* Navbar styles */
