@@ -18,6 +18,11 @@ li {
 
 /* Navbar styles */
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Hamburger menu vertical alignment */
 .navbar-collapse {
     display: flex;
