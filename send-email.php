@@ -1,21 +1,23 @@
 <?php
+if (isset($_POST['submit'])) {
+    $to = 'ctspencer432@gmail.com'; // Email address to send the message to
+    $subject = $_POST['subject']; // Subject of the message
+    $name = $_POST['name']; // Name of the sender
+    $email = $_POST['email']; // Email address of the sender
+    $message = $_POST['message']; // Message body
 
-if(isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    $to = "ctspencer432@gmail.com";
-    $headers = "From: " . $email . "\r\n" .
-               "Reply-To: " . $email . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
-    $email_body = "Name: $name\n\nEmail: $email\n\nSubject: $subject\n\nMessage:\n$message";
-    $sent = mail($to, $subject, $email_body, $headers);
-    if($sent) {
-        echo "Thank you for contacting us!";
+    // Email headers
+    $headers = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+
+    // Send the message
+    $sent = mail($to, $subject, $message, $headers);
+
+    if ($sent) {
+        echo '<p>Your message has been sent successfully. Thank you for contacting us.</p>';
     } else {
-        echo "Sorry, your message could not be sent.";
+        echo '<p>Sorry, there was an error sending your message. Please try again later.</p>';
     }
 }
-
 ?>
