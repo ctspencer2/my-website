@@ -1,4 +1,8 @@
 /* General styles */
+html, body {
+    height: 100%;
+}
+
 body, li {
     font-family: 'Alegreya', serif;
 }
@@ -124,28 +128,33 @@ a {
 /* Button styles */
 .btn {
     background: rgb(0, 88, 88);
-    display:inline-block;
-    padding: 0;
     border: none;
-    cursor: pointer;
-    outline-offset: 4px;
     border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
 }
 
 .front {
+  background: teal;
+  color: white;
+  transform: translateY(-4px);
   display: block;
   padding: 12px 42px;
   border-radius: 12px;
-  font-size: 1.25em;
-  background: teal;
-  color: white;
-  transform: translateY(-6px);
+  font-size: 1.25rem;
+  will-change: transform;
+  transition: transform 250ms;
 }
 
-/* Active Button State */
-  .button:active {
-    background-color: rgb(236, 89, 148);
+.btn:hover .front {
+    transform: translateY(-6px);
   }
+
+.btn:active .front {
+    transform: translateY(-2px);
+}
 
 /* responsive media */
   @media all and (max-width:30em){
@@ -255,11 +264,11 @@ a {
 
 /* Footer styles */
 #footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #f8f9fa;
     height: 60px;
+    margin-top: 200px;
 }
 
 /* Section spacing */
