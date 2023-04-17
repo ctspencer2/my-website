@@ -231,6 +231,11 @@ a {
 .social-icons {
     font-size: 36px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .fa-instagram:hover,
@@ -250,8 +255,11 @@ a {
 
 /* Footer styles */
 #footer {
-    background-color: #808080;
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    height: 60px;
 }
 
 /* Section spacing */
