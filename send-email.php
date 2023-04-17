@@ -12,12 +12,13 @@ if (isset($_POST['submit'])) {
     $headers .= "Content-type: text/plain; charset=utf-8\r\n";
 
     // Send the message
-    $sent = mail($to, $subject, $message, $headers);
+    $sent = mail($to, $subject, $message, $headers, '-f' . $email);
 
     if ($sent) {
         echo '<p>Your message has been sent successfully. Thank you for contacting us.</p>';
     } else {
         echo '<p>Sorry, there was an error sending your message. Please try again later.</p>';
+        error_log('Error sending email: ' . error_get_last()['message']);
     }
 }
 ?>

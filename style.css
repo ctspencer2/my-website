@@ -29,6 +29,10 @@ a {
 }
 
 /* Hamburger menu vertical alignment */
+.navbar {
+    background-color: white;
+}
+
 .navbar-collapse {
     display: flex;
     flex-direction: column;
